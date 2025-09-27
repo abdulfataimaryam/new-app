@@ -16,12 +16,12 @@ export default function Signup() {
       return;
     }
 
-    // Save user to local storage
+    
     const user = { fullName, email, password };
     localStorage.setItem("user", JSON.stringify(user));
 
     alert("Account created successfully!");
-    navigate("/login"); // redirect to login page
+    navigate("/login"); 
   };
 
   return (

@@ -1,14 +1,14 @@
-/* Full page container */
+
 .signup-container {
   display: flex;
   height: 100vh;
   width: 100%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #ffffff; /* Entire page white */
-  gap: 50px; /* increased gap between image and form */
+  background-color: #ffffff; 
+  gap: 50px; 
 }
 
-/* Left image */
+
 .signup-image {
   flex: 1;
   display: flex;
@@ -18,11 +18,11 @@
 
 .signup-image img {
   width: auto;
-  height: 66%; /* ~2/3 height */
+  height: 66%; 
   object-fit: contain;
 }
 
-/* Right form */
+
 .signup-form {
   flex: 1;
   display: flex;
@@ -38,7 +38,6 @@
   color: #333;
 }
 
-/* Form styling */
 .signup-form form {
   display: flex;
   flex-direction: column;
@@ -46,7 +45,7 @@
   max-width: 400px;
 }
 
-/* Line inputs */
+
 .signup-form input {
   padding: 10px 0;
   margin-bottom: 20px;
@@ -55,22 +54,22 @@
   font-size: 16px;
   outline: none;
   transition: border-color 0.3s;
-  background: transparent; /* remove default input background */
-  border-radius: 0; /* no rounding */
+  background: transparent;
+  border-radius: 0; 
 }
 
 .signup-form input:focus {
-  border-bottom-color: #007bff;/* Login button width reduced and side-by-side forgot password */
+  border-bottom-color: #007bff;
 .login-actions {
   display: flex;
   align-items: center;
-  gap: 40px; /* space between button and forgot password link */
+  gap: 40px; 
   margin-bottom: 20px;
 }
 
 .login-button {
-  padding: 12px 25px; /* smaller button */
-  background-color: #ff0000; /* red button */
+  padding: 12px 25px; 
+  background-color: #ff0000; 
   color: #fff;
   border: none;
   border-radius: 0;
@@ -95,13 +94,12 @@
 
 }
 
-/* Button styling */
 .signup-form button {
   padding: 15px 20px;
-  background-color: #ff0000; /* red button */
+  background-color: #ff0000; 
   color: #fff;
   font-size: 16px;
-  border-radius: 0; /* rectangular edges */
+  border-radius: 0; 
   border: none;
   cursor: pointer;
   transition: background-color 0.3s;
@@ -111,7 +109,7 @@
   background-color: #cc0000;
 }
 
-/* Responsive for mobile */
+
 @media (max-width: 768px) {
   .signup-container {
     flex-direction: column;
@@ -120,11 +118,11 @@
   }
 
   .signup-image img {
-    height: 50%; /* smaller on mobile */
+    height: 50%; 
   }
 }
 
-/* Login text under button */
+
 .login-text {
   margin-top: 20px;
   font-size: 14px;
@@ -142,7 +140,7 @@
   text-decoration: underline;
 }
 
-/* Subheading under main title */
+
 .subheading {
   font-size: 16px;
   color: #555;
@@ -152,6 +150,6 @@
 .login-actions {
   display: flex;
   align-items: center;
-  gap: 40px; /* increased gap between button and forgot password link */
+  gap: 40px; 
   margin-bottom: 20px;
 }

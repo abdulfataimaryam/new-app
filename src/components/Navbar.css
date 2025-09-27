@@ -1,9 +1,9 @@
 .navbar {
   background-color: #fff;
   border-bottom: 1px solid #e5e5e5;
-  height: 60px;              /* fixed height */
+  height: 60px;              
   display: flex;
-  align-items: center;       /* centers content vertically */
+  align-items: center;       
 }
 
 .nav-container {
@@ -38,7 +38,7 @@
 }
 
 .search input {
-  padding: 0.3rem 0.7rem;  /* slim input */
+  padding: 0.3rem 0.7rem;  
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 0.9rem;

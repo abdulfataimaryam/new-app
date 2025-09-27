@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./Signup.css"; // Reuse same styles
+import "./Signup.css"; 
 import phoneCart from "../assets/phone cart.webp";
 
 export default function Login() {
