@@ -54,7 +54,7 @@ export default function Login({ setIsLoggedIn }) {  // <-- added prop
           </div>
         </form>
         <p className="login-text">
-          Don't have an account? <a href="/signup">Sign up</a>
+          Don't have an account? <link to="/signup">Sign up</link>
         </p>
       </div>
     </div>
