@@ -1,4 +1,3 @@
-// LandingPage.jsx
 import React from "react";
 import Sidebar from "./SideBar";
 import HeroBanner from "./HeroBanner";

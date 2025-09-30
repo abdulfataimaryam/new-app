@@ -23,14 +23,13 @@ function App() {
               path="/login" 
               element={<Login setIsLoggedIn={setIsLoggedIn} />} 
             />
+ 
 
-            {/* Protected Landing Page */}
             <Route
               path="/landing"
               element={isLoggedIn ? <LandingPage /> : <Navigate to="/login" />}
             />
 
-            {/* Default route */}
             <Route path="/" element={<Navigate to="/login" />} />
           </Routes>
         </div>

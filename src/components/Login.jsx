@@ -1,9 +1,9 @@
 import React, { useState } from "react"; 
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";  
 import "./Signup.css"; 
 import phoneCart from "../assets/phone cart.webp";
 
-export default function Login({ setIsLoggedIn }) {  // <-- added prop
+export default function Login({ setIsLoggedIn }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
@@ -19,8 +19,8 @@ export default function Login({ setIsLoggedIn }) {  // <-- added prop
 
     if (email === savedUser.email && password === savedUser.password) {
       alert("Login successful!");
-      setIsLoggedIn(true);         // <-- update App.jsx state
-      navigate("/landing");        // <-- redirect to LandingPage
+      setIsLoggedIn(true);         
+      navigate("/landing");        
     } else {
       alert("Invalid email or password");
     }
@@ -53,8 +53,9 @@ export default function Login({ setIsLoggedIn }) {  // <-- added prop
             <a href="#" className="forgot-password">Forgot Password?</a>
           </div>
         </form>
+
         <p className="login-text">
-          Don't have an account? <link to="/signup">Sign up</link>
+          Don't have an account? <Link to="/signup">Sign up</Link>
         </p>
       </div>
     </div>
