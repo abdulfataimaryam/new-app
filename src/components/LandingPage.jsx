@@ -1,7 +1,7 @@
 // LandingPage.jsx
 import React from "react";
 import Sidebar from "./SideBar";
-import HeroBanner from "./Herobanner";
+import HeroBanner from "./HeroBanner";
 import FlashSales from "./Flashsales";
 import Categories from "./Categories";
 import LandingLower from "./LandingLower";
