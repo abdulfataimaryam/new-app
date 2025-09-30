@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useState } from "react"; 
 import { useNavigate } from "react-router-dom";
 import "./Signup.css"; 
 import phoneCart from "../assets/phone cart.webp";
 
-export default function Login() {
+export default function Login({ setIsLoggedIn }) {  // <-- added prop
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
@@ -19,7 +19,8 @@ export default function Login() {
 
     if (email === savedUser.email && password === savedUser.password) {
       alert("Login successful!");
-      navigate("/dashboard");
+      setIsLoggedIn(true);         // <-- update App.jsx state
+      navigate("/landing");        // <-- redirect to LandingPage
     } else {
       alert("Invalid email or password");
     }

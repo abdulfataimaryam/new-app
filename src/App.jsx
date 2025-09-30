@@ -1,24 +1,37 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import React, { useState } from "react";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Signup from "./components/Signup";
 import Login from "./components/Login";
+import LandingPage from "./components/LandingPage";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 
 import "./App.css";
 
 function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
   return (
     <Router>
       <div className="app-container">
         <Navbar />
         <div className="content">
           <Routes>
-            {/* ✅ Add this so "/" shows something */}
-            <Route path="/" element={<Signup />} />  
-
             <Route path="/signup" element={<Signup />} />
-            <Route path="/login" element={<Login />} />
+            
+            <Route 
+              path="/login" 
+              element={<Login setIsLoggedIn={setIsLoggedIn} />} 
+            />
+
+            {/* Protected Landing Page */}
+            <Route
+              path="/landing"
+              element={isLoggedIn ? <LandingPage /> : <Navigate to="/login" />}
+            />
+
+            {/* Default route */}
+            <Route path="/" element={<Navigate to="/login" />} />
           </Routes>
         </div>
         <Footer />

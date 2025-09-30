@@ -1,0 +1,385 @@
+/* Layout */
+.landing-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.sidebar {
+  width: 220px;
+  background: #fff;
+  border-right: 1px solid #ddd;
+}
+
+.main-content {
+  flex: 1;
+}
+
+/* Sidebar */
+.sidebar-list {
+  list-style: none;
+  padding: 0;
+}
+.sidebar-list li {
+  padding: 12px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+.sidebar-list li:hover {
+  background: #f8f8f8;
+}
+
+
+.hero-banner img {
+  max-width: 300px;             /* control image size */
+  height: auto;
+}
+
+
+.banner-content p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.hero-banner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  padding: 2rem;
+  background: #000;   /* black background */
+  color: #fff;        /* white text */
+  border-radius: 8px;
+}
+
+.hero-banner h2 {
+  font-size: 0.9rem;   /* ✅ very small font */
+  font-weight: normal;
+  margin-bottom: 0.5rem;
+}
+
+.hero-banner p {
+  font-size: 1.2rem;
+  font-weight: bold;   /* ✅ bold text */
+  margin-bottom: 1rem;
+}
+
+.hero-banner button {
+  background: #000;    /* ✅ black button */
+  color: #fff;         /* ✅ white text */
+  border: 1px solid #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.hero-banner img {
+  max-width: 300px;
+  height: auto;
+}
+
+
+/* Flash Sales */
+.flash-sales {
+  margin-bottom: 40px;
+}
+.flash-sales h3 {
+  margin-bottom: 10px;
+}
+.countdown {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.products {
+  display: flex;
+  gap: 20px;
+}
+.product-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  background: #fff;
+  flex: 1;
+}
+.product-card {
+  min-width: 200px; /* consistent width */
+  flex: 0 0 auto; /* prevent shrinking */
+  text-align: center;
+  border: 1px solid #eee; /* softer border */
+  border-radius: 8px;
+  padding: 1rem;
+  background: #f9f9f9; /* ✅ light grey background */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05); /* softer shadow */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Optional: hover effect */
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+  max-width: 100px;
+  margin-bottom: 10px;
+}
+.discount {
+  color: red;
+  font-weight: bold;
+}
+.price {
+  font-size: 16px;
+  margin: 10px 0;
+}
+.old-price {
+  text-decoration: line-through;
+  color: gray;
+  font-size: 14px;
+}
+.product-card button {
+  padding: 8px 12px;
+  background: black;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.product-card button:hover {
+  background: #333;
+}
+.view-all {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: red;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Categories */
+.categories h3 {
+  margin-bottom: 15px;
+}
+.category-grid {
+  display: flex;
+  gap: 15px;
+}
+.category-card {
+  flex: 1;
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 6px;
+  background: #fff;
+  cursor: pointer;
+}
+.category-card:hover {
+  background: #f8f8f8;
+}
+.icon {
+  font-size: 28px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Flash sales container */
+.flash-sales {
+  padding: 2rem;
+}
+
+.flash-sales h2 {
+  margin-bottom: 1rem;
+}
+
+/* ✅ Align products horizontally */
+.product-list {
+  display: flex;
+  gap: 1.5rem; /* space between items */
+  flex-wrap: nowrap; /* prevent wrapping to new lines */
+  overflow-x: auto; /* allow scrolling if too many items */
+  padding-bottom: 1rem;
+}
+
+/* ✅ Product cards */
+.product-card {
+  min-width: 200px; /* consistent width */
+  flex: 0 0 auto; /* prevent shrinking */
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* ✅ Product images */
+.product-image {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  margin: 0 auto 1rem;
+  display: block;
+}
+/* Global font */
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333; /* neutral dark text for readability */
+  margin: 0;
+  padding: 0;
+}
+/* Product details */
+.product-name {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0.5rem 0;
+}
+
+/* ⭐ Rating styles */
+.product-rating {
+  color: gold;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.star {
+  color: #ccc; /* default grey */
+}
+
+.star.filled {
+  color: #facc15; /* gold/yellow */
+}
+
+/* Prices */
+.product-prices {
+  margin-top: 0.5rem;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #888;
+  margin-right: 0.5rem;
+}
+
+.new-price {
+  color: #e60023; /* red highlight */
+  font-weight: bold;
+}
+/* Countdown */
+.countdown {
+  display: flex;                /* ✅ align boxes horizontally */
+  gap: 1rem;
+  margin-left: auto;             /* pushes it to the right side */
+}
+
+.countdown div {
+  background: #f9f9f9;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.countdown span {
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: block;
+}
+
+/* Product container */
+.flash-products {
+  display: flex;                 /* ✅ cards side by side */
+  gap: 1.5rem;
+  margin: 2rem 0;
+  overflow-x: auto;              /* allows scroll on smaller screens */
+  padding-bottom: 1rem;
+}
+
+/* Each product card */
+.product-card {
+  width: 200px;                  /* fixed width for consistency */
+  flex: 0 0 auto;
+  text-align: center;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 1rem;
+  background: #f0f0f0;           /* ✅ slightly darker grey */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* View All button */
+.view-all {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+
+
+
+/* Countdown (white background only) */
+.countdown div {
+  background: #fff;   /* ✅ white background */
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-align: center;
+  border: 1px solid #eee; /* optional subtle border */
+}
+
+/* View All button (no long red background, just the button itself) */
+/* View All container */
+.view-all {
+  text-align: center;
+  margin-top: 1.5rem;
+  background: none;   /* ✅ ensure container has no background */
+}
+
+/* View All button */
+.view-all-btn {
+  display: inline-block;       /* ✅ makes button size wrap its text */
+  background: #e60023;         /* red only on the button */
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.view-all-btn:hover {
+  background: #c5001d;
+}
+
+.landing-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; /* space between sections */
+  width: 100%;
+}
+
+.landing-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Sidebar + Hero side by side */
+.hero-row {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;  /* makes hero fill the height of sidebar */
+}
+
+/* Sidebar fixed width */
+.hero-row > :first-child {
+  width: 250px;  /* or whatever fits */
+  flex-shrink: 0;
+}
+
+/* Hero takes all remaining space */
+.hero-row > :last-child {
+  flex: 1;
+   background: #000;   /* Black background */
+  color: #fff;  
+}
+
+
