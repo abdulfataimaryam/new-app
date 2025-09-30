@@ -2,7 +2,7 @@
 import React from "react";
 import Sidebar from "./SideBar";
 import HeroBanner from "./HeroBanner";
-import FlashSales from "./Flashsales";
+import FlashSales from "./FlashSales";
 import Categories from "./Categories";
 import LandingLower from "./LandingLower";
 import "./LandingPage.css";
